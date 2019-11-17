@@ -18,6 +18,9 @@ class ToDoList:
                 for line in to_do_markdown_lines
                 if line.strip() != ""]
 
+    def get_parent(self, line: ToDoLine, cur_indent: int) -> ToDoNode:
+        return NotImplemented
+
     def parse_to_do_items(self, to_do_list_markdown: str) -> ToDoNode:
         to_do_lines: List[ToDoLine] = self.get_to_do_lines(to_do_list_markdown)
         to_do_root = ToDoNode()
@@ -28,9 +31,7 @@ class ToDoList:
         for cur_indent in range(max_indent):
             for line in to_do_lines:
                 if line.indent == cur_indent - 1 and parent != None:
-                    parent = [node for node
-                              in parent.parent.children
-                              if node.line == line][0]
+                    parent = self.get_parent(line, cur_indent)
                 if line.indent == cur_indent and parent != None:
                     parent.children.append(ToDoNode.from_line(line))
             print(to_do_root)

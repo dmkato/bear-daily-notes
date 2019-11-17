@@ -5,5 +5,5 @@ from ToDo.ToDoList import ToDoList
 
 if __name__ == "__main__":
     bear = Bear()
-    note_markdown = bear.open_note(title="ToDo")
+    note_markdown: str = bear.open_note(title="ToDo")
     to_do_note = ToDoList(note_markdown)
