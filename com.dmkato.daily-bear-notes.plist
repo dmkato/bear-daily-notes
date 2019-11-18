@@ -7,21 +7,71 @@
 
   <key>ProgramArguments</key>
   <array>
-    <string>/Users/dmkato/Code/bear-scripts/create_daily_notes.py</string>
+    <string>/Users/danielkato/Code/bear-scripts/run.sh</string>
   </array>
 
   <key>Nice</key>
   <integer>1</integer>
 
   <key>StartCalendarInterval</key>
-  <dict>
-        <key>Weekday</key>
-        <integer>*</integer>
-        <key>Hour</key>
-        <integer>19</integer>
-        <key>Minute</key>
-        <integer>12</integer>
-  </dict>
+  <array>
+    <dict>
+          <key>Weekday</key>
+          <integer>0</integer>
+          <key>Hour</key>
+          <integer>19</integer>
+          <key>Minute</key>
+          <integer>15</integer>
+    </dict>
+    <dict>
+          <key>Weekday</key>
+          <integer>1</integer>
+          <key>Hour</key>
+          <integer>19</integer>
+          <key>Minute</key>
+          <integer>15</integer>
+    </dict>
+    <dict>
+          <key>Weekday</key>
+          <integer>2</integer>
+          <key>Hour</key>
+          <integer>19</integer>
+          <key>Minute</key>
+          <integer>15</integer>
+    </dict>
+    <dict>
+          <key>Weekday</key>
+          <integer>3</integer>
+          <key>Hour</key>
+          <integer>19</integer>
+          <key>Minute</key>
+          <integer>15</integer>
+    </dict>
+    <dict>
+          <key>Weekday</key>
+          <integer>4</integer>
+          <key>Hour</key>
+          <integer>19</integer>
+          <key>Minute</key>
+          <integer>15</integer>
+    </dict>
+    <dict>
+          <key>Weekday</key>
+          <integer>5</integer>
+          <key>Hour</key>
+          <integer>19</integer>
+          <key>Minute</key>
+          <integer>15</integer>
+    </dict>
+    <dict>
+          <key>Weekday</key>
+          <integer>7</integer>
+          <key>Hour</key>
+          <integer>19</integer>
+          <key>Minute</key>
+          <integer>28</integer>
+    </dict>
+  </array>
 
   <key>RunAtLoad</key>
   <true/>
